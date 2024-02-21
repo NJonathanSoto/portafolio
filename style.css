@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 900;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1.3rem;
+}
+header a {
+    display: flex;
+    align-items: center;
+}
+.main-principal {
+    display: flex;
+    justify-content: center;
+    padding: 1.7rem 1.3rem 2rem 1.3rem;
+}
+header img {
+    width: 180px;
+}
+.navegador ul {
+    list-style: none;
+}
+.navegador ul li {
+    display: inline-block;
+    margin: 1rem;
+}
+.navegador ul li a {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: black;
+    padding: 0.5rem;
+}
+.contenedor-principal {
+    width: 900px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.inicio img, .inicio p {
+    width: 600px;
+}
+.inicio {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.inicio img {
+    padding-bottom: 0.5rem;
+}
+.inicio p {
+    font-size: 1.3rem;
+    padding: 0rem 3.5rem;
+}
+.perfil img, .proyectos img, .certificados img {
+    width: 300px;
+}
+.main-proyectos {
+    display: flex;
+    justify-content: center;
+    padding: 1.7rem 1.3rem 0rem 1.3rem;
+}
+.main-proyectos {
+    padding: 1.7rem 1.3rem 7rem 1.3rem;
+}
+.main-certificados {
+    padding: 1.7rem 1.3rem 6.7rem 1.3rem;
+}
+.proyectos, .certificados {
+    text-align: center;
+}
+.proyectos div, .certificados div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.titulo-proyectos, .titulo-certificados {
+    padding-bottom: 1.5rem;
+}
+.proyectos div img, .certificados div img {
+    margin: 1rem;
+    border: 0.12rem solid black;
+    cursor: pointer;
+}
+.main-certificados {
+    display: flex;
+    justify-content: center;
+}
+footer {
+    padding: 1rem 2rem 1.5rem 2rem;
+}
+footer img {
+    width: 50px;
+    margin: 0.7rem;
+}
+.icono-inicio {
+    display: none;
+    width: 50px;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+/* Pseudo-clases */
+
+.link-proyectos:hover, .link-certificados:hover, .link-contacto:hover {
+    transition: 0.25s;
+}
+
+.proyectos div img:hover, .certificados div img:hover {
+    transform: scale(1.02);
+    transition: 0.25s;
+    filter: saturate(150%);
+}
+
+/* Clases activadas a través de eventos */
+
+.clase-redes {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+/* Media Querys */
+
+@media (max-width: 630px) {
+
+    .main-principal {
+        padding: 0.7rem 0rem 2rem 0rem;
+    }
+    .inicio, footer {
+        text-align: center;
+    }
+    .inicio img, .inicio p {
+        width: 100%;
+    }
+    footer {
+        padding: 3rem 1.5rem 3.3rem 1.5rem;
+    }
+    footer img {
+        width: 45px;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 0.5rem 0.2rem;
+    }
+    .navegador {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    header img {
+        display: none;
+    }
+    .icono-inicio {
+        display: block;
+    }
+    .proyectos img, .certificados img {
+        width: 270px;
+    }
+}
+
+@media (max-width: 450px) {
+    .perfil img {
+        width: 250px;
+    }
+}
