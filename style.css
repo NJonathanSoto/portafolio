@@ -131,6 +131,9 @@ footer img {
     .main-principal {
         padding: 0.7rem 0rem 2rem 0rem;
     }
+    .main-proyectos, .main-certificados {
+        padding: 1.7rem 1.3rem 2rem 1.3rem;
+    }
     .inicio, footer {
         text-align: center;
     }
